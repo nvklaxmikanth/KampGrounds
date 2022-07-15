@@ -1,0 +1,21 @@
+body{
+    height: 100vh;
+}
+.home{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("https://res.cloudinary.com/nvklaxmikanth/image/upload/v1639058366/284960_q5rmxk.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.cover-container{
+    max-width: 80vw;
+}
+.nav-link{
+    margin: 0 3px;
+    border-bottom: 0.25rem solid transparent;
+}
+.nav-link.active{
+    border-bottom-color: rgb(255,255,255);
+}
+.nav-link:hover{
+    border-bottom-color: rgba(255,255,255,0.5);
+}

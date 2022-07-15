@@ -1,0 +1,27 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">KampGrounds</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link" href="/campgrounds">Campgrounds</a>
+            <a class="nav-link" href="/campgrounds/user/">My Campgrounds</a>
+            <a class="nav-link" href="/campgrounds/new">New Campground</a>
+        </div>
+        <div class="navbar-nav ms-auto">
+            <form class="d-flex mx-10" action="/campgrounds/results" method="POST">
+              <input class="form-control me-2" name="title" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit"><i class="ri-search-line"></i></button>
+            </form>
+            <% if(!currentUser) {%>
+                <a class="nav-link" href="/login">Login</a>
+                <a class="nav-link" href="/Register">Register</a>
+            <% } else { %>
+                <a class="nav-link" href="/logout">Logout</a>
+            <% } %>
+        </div>
+      </div>
+    </div>
+</nav>

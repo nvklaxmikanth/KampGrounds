@@ -1,0 +1,30 @@
+<% layout('layouts/boilerplate') %>
+
+<div class="container d-flex justify-content-center align-items-center mt-4 mb-5">
+    <div class="row">
+        <div class="">
+            <div class="card shadow" style="width: 24rem;">
+                <div class="card-body">
+                    <h5 class="card-title mb-5">Login</h5>
+                    <form action="/login" class = "validated-form" method="post" novalidate>
+                        <div class="mb-3">
+                            <label class="form-label" for="username">Username:</label>
+                            <input class="form-control" type="text" id="username" name="username" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="password">Password:</label>
+                            <input class="form-control" type="password" id="password" name="password" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <button class="btn btn-success">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
